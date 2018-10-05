@@ -1,0 +1,128 @@
+header.head{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 600px;
+  background: url("../img/bg/header-bg.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-width: 768px){
+    height: 620px;
+  }
+
+  @media only screen and (min-width: 992px){
+   height: 700px;
+}
+  .navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+  }
+  .display-5{
+    color: #00b3ee;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .caption-border{
+    display: block;
+    border: 2px solid #00b3ee;
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 5%;
+  }
+  .display-2{
+    font-size: 2.5rem;
+    color: #00b3ee;
+    letter-spacing: 1px;
+    margin-top: 15px;
+  }
+  .desc_head{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #00b3ee;
+    margin-top: 15px;
+    line-height: 1.5;
+
+  }
+.arrow_hover {
+  .arrow_block {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    border: 2px solid #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    bottom: 12%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    &:hover, &:focus {
+      border-color: #007bff;
+    }
+
+    i.fa {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      font-size: 30px;
+      color: #ffffff;
+      &:hover, &:focus {
+        color: #007bff;
+      }
+    }
+  }
+}
+  @media only screen and (min-width: 769px) {
+    .display-2{
+      font-size: 4rem;
+      margin-top: 20px;
+    }
+    .desc_head{
+      font-size: 22px;
+      margin-top: 20px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      letter-spacing: 1.2px;
+
+    }
+
+
+    .display-5{
+      font-size: 20px;
+
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .display-2{
+      font-size: 5rem;
+      margin-top: 30px;
+    }
+    .desc_head{
+      font-size: 27px;
+      margin-top: 25px;
+
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .display-2{
+      font-size: 6.5rem;
+
+    }
+    .desc_head{
+      font-size: 27px;
+      margin-top: 25px;
+
+    }
+  }
+}

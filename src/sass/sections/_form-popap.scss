@@ -1,0 +1,115 @@
+
+.ykd-container{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: .5s;
+  z-index: 99;
+  &>.toggleForm{
+    display: block;
+    background-color: purple;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 0;
+    border-radius: 8px 8px 0 0;
+    width: 85%;
+    cursor: pointer;
+  }
+}
+
+.formBox{
+  padding: 15px;
+  border: 2px solid purple;
+  border-radius: 3px;
+  background-color: #ffffff;
+
+}
+.inputBox{
+  margin: 0 0 20px;
+  position: relative;
+  &>.labelText{
+    font-size: 12px;
+    font-weight: normal;
+    color: gray;
+    position: absolute;
+    line-height: 55px;
+    transition: .5s;
+  }
+  &>.userInput{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: #575454;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a5a5a5;
+    position: relative;
+    background-color: transparent;
+  }
+}
+.focus .labelText{
+  transform: translateY(-30px);
+  font-size: 14px;
+  color: purple;
+}
+textarea.userInput{
+  height: 150px;
+  margin-top: 12px;
+}
+.personalDoc,
+.personalDoc a {
+  color: #858585;
+}
+.personalDoc a:hover{
+  text-decoration: none;
+  color: purple;
+}
+.button_form{
+  background-color: purple;
+  color: white;
+  outline: none;
+  border: none;
+  width: 45%;
+  height: 35px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 50%;
+  cursor: pointer;
+  transition: .5s;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  &:hover{
+    background-color: #b33edc;
+  }
+}
+.form_container{
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 768px){
+  .toggleForm{
+    font-size: 24px;
+  }
+  .labelText{
+    font-size: 18px;
+  }
+  .button_form{
+    font-size: 16px;
+  }
+  .formBox{
+    border: 3px solid purple;
+    padding: 30px;
+  }
+}

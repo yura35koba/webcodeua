@@ -1,0 +1,15 @@
+.slider{
+  margin: 0;
+  padding: 0;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+.slider_web{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

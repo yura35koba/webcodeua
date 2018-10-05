@@ -1,0 +1,93 @@
+.menu-link{
+  z-index: 700;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+
+  right: 20px;
+  span, span:before, span:after {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: 50%;
+    margin-top: -1px;
+
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+
+  }
+  span:before{
+    transition: all 0.2s;
+    content: "";
+    margin-top: -6px;
+  }
+  span:after{
+    transition: all 0.2s;
+    content: "";
+    margin-top: 4px;
+  }
+  &_active span{
+    background-color: transparent;
+    &:before{
+      transform: rotate(135deg);
+      margin-top: 0;
+      background-color: orange;
+    }
+    &:after{
+      transform: rotate(-135deg);
+      margin-top: 0;
+      background-color: orange;
+    }
+  }
+}
+.menu{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  opacity: .9;
+  z-index: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  right: -100vw;
+  &_active{
+    right: 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    li{
+      width: 100vw;
+    }
+    a {
+      display: block;
+      width: 100vw;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      text-decoration: none;
+      line-height: 4;
+      letter-spacing: 4px;
+      transition: all 0.2s;
+
+      &:hover{
+        background-color: rgba(255,255,255, .4);
+        color: orange;
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}

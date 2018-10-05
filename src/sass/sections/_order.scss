@@ -1,0 +1,39 @@
+.order{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+.order_bg{
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/bg/project-featured.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  position: relative;
+
+  @media screen and (min-width: 768px){
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 992px){
+    padding-bottom: 70px;
+  }
+
+  .order_shadow{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 105, 217);
+    opacity: .5;
+  }
+}

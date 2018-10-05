@@ -1,0 +1,37 @@
+.footer{
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #000000;
+}
+
+
+.footer-copy__description p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 300;
+  color: rgb(206, 206, 206);
+  letter-spacing: 1px;
+  @media screen and (min-width: 768px){
+    font-size: 14px;
+  }
+  span{
+    margin: 0;
+    padding: 0;
+    color: rgb(206, 206, 206);
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    @media screen and (min-width: 768px){
+      font-size: 16px;
+    }
+  }
+}

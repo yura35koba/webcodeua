@@ -1,0 +1,66 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  outline: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+/* fix for top margin collapsing and vertical scroll prevent for body tag, when body height = 100% */
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  color: #037EC6;
+  text-decoration: none;
+  outline: none;
+}
+.pd-lr-0{
+  padding-left: 0;
+  padding-right: 0;
+}
+.pd-tb-0{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.mr-input-30{
+  margin-right: 30px;
+}
+.mb-0{
+  margin-bottom: 0;
+}
+
+.align_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Remove mobile support */
+//body {
+//	min-width: 1200px;
+//}
+
+//.container {
+//	width: 1140px;
+//	min-width: 1140px;
+//}
+/* // Remove mobile support */
+
+
+
